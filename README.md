@@ -1,22 +1,34 @@
 
 <!-- TOC -->
 
-- [1. 新学功能](#1-新学功能)
-    - [git fetch远程代码并合并](#git-fetch远程代码并合并)
-    - [1.1. fork别人的代码 之后 更新与pull request](#11-fork别人的代码-之后-更新与pull-request)
-    - [1.2. 撤销与覆盖](#12-撤销与覆盖)
-- [2. 分支管理](#2-分支管理)
-    - [2.1. 分支原理](#21-分支原理)
-    - [2.2. 分支创建](#22-分支创建)
-    - [2.3. 冲突合并](#23-冲突合并)
-        - [2.3.1. 分支策略](#231-分支策略)
-    - [2.4. git stash](#24-git-stash)
-        - [2.4.1. 开发一个新feature，最好新建一个分支；](#241-开发一个新feature最好新建一个分支)
-- [3. 标签管理](#3-标签管理)
+- [1. 新学功能](#1-%E6%96%B0%E5%AD%A6%E5%8A%9F%E8%83%BD)
+  - [git remote](#git-remote)
+  - [git fetch远程代码并合并](#git-fetch%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E5%B9%B6%E5%90%88%E5%B9%B6)
+  - [1.1. fork别人的代码 之后 更新与pull request](#11-fork%E5%88%AB%E4%BA%BA%E7%9A%84%E4%BB%A3%E7%A0%81-%E4%B9%8B%E5%90%8E-%E6%9B%B4%E6%96%B0%E4%B8%8Epull-request)
+  - [1.2. 撤销与覆盖](#12-%E6%92%A4%E9%94%80%E4%B8%8E%E8%A6%86%E7%9B%96)
+- [2. 分支管理](#2-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86)
+  - [2.1. 分支原理](#21-%E5%88%86%E6%94%AF%E5%8E%9F%E7%90%86)
+  - [2.2. 分支创建](#22-%E5%88%86%E6%94%AF%E5%88%9B%E5%BB%BA)
+  - [2.3. 冲突合并](#23-%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B6)
+    - [2.3.1. 分支策略](#231-%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5)
+  - [2.4. git stash](#24-git-stash)
+    - [2.4.1. 开发一个新feature，最好新建一个分支；](#241-%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E6%96%B0feature%E6%9C%80%E5%A5%BD%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF)
+- [3. 标签管理](#3-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86)
 
 <!-- /TOC -->
 
 # 1. 新学功能
+## git remote 
++ 重新设置远程仓库
+git remote 查看所有远程仓库  
+git remote xxx 查看指定远程仓库地址  
+git remote set-url origin 其他的url  
++ error: Your local changes to the following files would be overwritten by merge:
+
+git add *  
+git stash  
+git pull  
+git stash pop  
 
 ## git fetch远程代码并合并
 需要从其他人的库里fetch代码 有选择的合并的时候   
