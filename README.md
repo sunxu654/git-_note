@@ -2,6 +2,7 @@
 <!-- TOC -->
 
 - [1. 新学功能](#1-新学功能)
+    - [git fetch远程代码并合并](#git-fetch远程代码并合并)
     - [1.1. fork别人的代码 之后 更新与pull request](#11-fork别人的代码-之后-更新与pull-request)
     - [1.2. 撤销与覆盖](#12-撤销与覆盖)
 - [2. 分支管理](#2-分支管理)
@@ -16,6 +17,20 @@
 <!-- /TOC -->
 
 # 1. 新学功能
+
+## git fetch远程代码并合并
+需要从其他人的库里fetch代码 有选择的合并的时候   
+
+git fetch remotename remotebranch:tmp  
+git checkout master(切换到自己想要merge远程分支的本地分支)  
+git diff tmp   
+git  merge tmp  
+git branch -d tmp  
+
+如果只是从自己的库里fetch 和 merge  
+git pull 
+
+
 ## 1.1. fork别人的代码 之后 更新与pull request
 fork别人的代码  
 git clone my_fork_link  
